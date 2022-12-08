@@ -9,9 +9,16 @@ using namespace std;
 
 
 int main() {
-    cout << "Version 0.1";
-    cout << "This program is made to show that I have learned git";
+    function();
 
     return 0;
 }
 
+/*
+* @@brief This function prints a message
+*
+*/
+void function() {
+    cout << "Version 0.2";
+    cout << "This program is made to show that I have learned git";
+}
