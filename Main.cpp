@@ -8,34 +8,6 @@
 
 using namespace std;
 
-class Printer;
-
-int main() {
-    Printer p;
-    p.setMessage1("Version 1.1");
-    p.setMessage2("This program is made to show that I have learned git");
-    p.printAll();
-    p.setMessage1("I have learned git commands like: ");
-    p.setMessage2("git init");
-    p.printAll();
-    p.setMessage1("git add [name of file]");
-    p.setMessage2("git reset [name of file]");
-    p.printAll();
-    p.setMessage1("git commit (with optional flag -m "" to add a message");
-    p.setMessage2("git branch");
-    p.printAll();
-    p.setMessage1("git checkout (with optional flag -b to create a branch");
-    p.setMessage2("git stash");
-    p.printAll();
-    p.setMessage1("This is my final commit to the beta branch");
-    p.setMessage2("I will then merge this with main");
-    p.printAll();
-    
-    return 0;
-}
-
-
-
 /*
 * @@brief class to print one of two messages
 */
@@ -103,4 +75,28 @@ void Printer::print2() {
 void Printer::printAll() {
     print1();
     print2();
+}
+
+int main() {
+    Printer p;
+    p.setMessage1("Version 1.1");
+    p.setMessage2("This program is made to show that I have learned git");
+    p.printAll();
+    p.setMessage1("I have learned git commands like: ");
+    p.setMessage2("git init");
+    p.printAll();
+    p.setMessage1("git add [name of file]");
+    p.setMessage2("git reset [name of file]");
+    p.printAll();
+    p.setMessage1("git commit (with optional flag -m "" to add a message");
+    p.setMessage2("git branch");
+    p.printAll();
+    p.setMessage1("git checkout (with optional flag -b to create a branch");
+    p.setMessage2("git stash");
+    p.printAll();
+    p.setMessage1("This is my final commit to the beta branch");
+    p.setMessage2("I will then merge this with main");
+    p.printAll();
+    
+    return 0;
 }
