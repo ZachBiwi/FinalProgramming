@@ -26,18 +26,13 @@ int main() {
     p.setMessage1("git checkout (with optional flag -b to create a branch");
     p.setMessage2("git stash");
     p.printAll();
-    
+    p.setMessage1("This is my final commit to the beta branch");
+    p.setMessage2("I will then merge this with main");
+    p.printAll();
     
     return 0;
 }
 
-/*
-* @@brief This function prints a message
-*/
-void function() {
-    cout << "Version 0.2";
-    cout << "This program is made to show that I have learned git";
-}
 
 
 /*
