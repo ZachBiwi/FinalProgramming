@@ -11,10 +11,23 @@ using namespace std;
 
 int main() {
     Printer p;
-    p.setMessage1("Version 0.3");
+    p.setMessage1("Version 0.4");
     p.setMessage2("This program is made to show that I have learned git");
     p.printAll();
-
+    p.setMessage1("I have learned git commands like: ");
+    p.setMessage2("git init");
+    p.printAll();
+    p.setMessage1("git add [name of file]");
+    p.setMessage2("git reset [name of file]");
+    p.printAll();
+    p.setMessage1("git commit (with optional flag -m "" to add a message");
+    p.setMessage2("git branch");
+    p.printAll();
+    p.setMessage1("git checkout (with optional flag -b to create a branch");
+    p.setMessage2("git stash");
+    p.printAll();
+    
+    
     return 0;
 }
 
