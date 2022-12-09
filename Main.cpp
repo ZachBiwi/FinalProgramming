@@ -8,10 +8,11 @@
 
 using namespace std;
 
+class Printer;
 
 int main() {
     Printer p;
-    p.setMessage1("Version 0.4");
+    p.setMessage1("Version 1.1");
     p.setMessage2("This program is made to show that I have learned git");
     p.printAll();
     p.setMessage1("I have learned git commands like: ");
